@@ -55,7 +55,7 @@ int main()
 			else{
 				printf("Can not be divided at zero tried again : \n");
 			}
-			}while(B==0);
+			}while(B!=0);
 
 
 			break;
