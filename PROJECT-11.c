@@ -75,11 +75,13 @@ int main()
 			break;
 		}
 		case '!':{
-       printf("hi");
-
-		break;
+		  C=0;
+      for(i=0;i<=A;i++){
+        C+=i;
+      }
+      printf("Solution : %d",C);
+      break;
 		}
-
 
 	}
 
