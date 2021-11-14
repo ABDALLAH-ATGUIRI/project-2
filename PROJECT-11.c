@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-int main()
+int main(void)
 {
 	int A,C,B,i;
 	int P;
@@ -63,8 +63,8 @@ int main()
 				printf("Entre type the power : \n");
 				scanf("%d",&P);
 				C=1;
-				for (i=0;i<=P;i++){
-				C*=A;
+				for (i=0;i<P;i++){
+					C=C*A;
 
 				}
 				printf("Solution :%d\n",C );
@@ -72,11 +72,14 @@ int main()
 			break;
 		}
 		case '!':{
-       printf("hi");
-      
-		break;
+		  C=0;
+      for(i=0;i<=A;i++){
+        C+=i;
+      }
+      printf("Solution : %d",C);
+      break;
 		}
-      
+
 
 	}
 
