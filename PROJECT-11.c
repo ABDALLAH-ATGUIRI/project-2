@@ -1,14 +1,16 @@
 #include<stdio.h>
 #include<math.h>
-int main(void)
+int main()
 {
 	int A,C,B,i;
 	int P;
 	char X;
 	C=0;
+
 	printf("Enter la valeure A = \n");
 	scanf("%d",&A);
-	printf("Enter the process = \n");
+		do {
+  printf("Enter the process = \n");
 	scanf("%s",&X);
 
 		//for(i=1;i<=5;i++){
@@ -63,21 +65,19 @@ int main(void)
 				printf("Entre type the power : \n");
 				scanf("%d",&P);
 				C=1;
-				for (i=0;i<P;i++){
-					C=C*A;
+				for (i=0;i<=P;i++){
+				C*=A;
 
 				}
-				printf("Solution :%d\n",C );
+				printf("Solution :%d ^ %d = %d\n",A,P,C );
+
 
 			break;
 		}
 		case '!':{
-		  C=0;
-      for(i=0;i<=A;i++){
-        C+=i;
-      }
-      printf("Solution : %d",C);
-      break;
+       printf("hi");
+
+		break;
 		}
 
 
@@ -93,5 +93,8 @@ int main(void)
 //		}
 //}
 //}
+A=C;
+}while(A==C);
+
 	return 0;
 }
